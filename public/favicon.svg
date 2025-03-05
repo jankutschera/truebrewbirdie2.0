@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+  <path d="M50 5L95 95H5L50 5Z" fill="#ff3333"/>
+  <path d="M50 25L75 75H25L50 25Z" fill="#ffcc00"/>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      path { fill: #ff3333; }
+      path:nth-child(2) { fill: #ffcc00; }
+    }
+  </style>
+</svg>

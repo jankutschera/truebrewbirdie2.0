@@ -1,0 +1,294 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Hero from '../components/Hero.astro';
+import SongLyrics from '../components/SongLyrics.astro';
+---
+
+<MainLayout title="Home">
+  <Hero 
+    title="They told us marketing was dead. We started a revolution instead." 
+    subtitle="Because while they chase templates, we engineer rebellion"
+    showCta={true}
+  />
+  
+  <section class="section">
+    <div class="container">
+      <div class="manifesto-intro">
+        <h2 class="section-title">While they require 5-figure minimums</h2>
+        <p class="section-subtitle">We scale companies with pure punk spirit</p>
+        
+        <h2 class="section-title">While they play it safe</h2>
+        <p class="section-subtitle">We break the rules that need breaking</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section remember-section">
+    <div class="container">
+      <h2 class="section-title">Remember when marketing meant something?</h2>
+      <div class="remember-grid">
+        <div class="remember-item">
+          <p>Before the copycat LinkedIn posts.</p>
+        </div>
+        <div class="remember-item">
+          <p>Before the "guru" playbooks.</p>
+        </div>
+        <div class="remember-item">
+          <p>Before passion got replaced by algorithms.</p>
+        </div>
+      </div>
+      
+      <div class="remember-statement">
+        <p>We do.</p>
+        <p>We remember when ideas could change the world.</p>
+        <p>When creativity wasn't just another template.</p>
+        <p>When marketing served the rebels, the creators, the ones who dared to be different.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="rebellion-intro">
+        <h2 class="section-title">That's why we built True Brew Birdie.</h2>
+        <p class="section-subtitle marker-text">Not an agency. Not a consultancy.</p>
+        <p class="section-subtitle marker-text">A marketing rebellion.</p>
+        
+        <div class="serve-statement">
+          <p>We serve the entrepreneurs who can't switch off.</p>
+          <p>Who don't understand why anyone would want to.</p>
+          <p>The pathfinders. The rule breakers. The empire builders.</p>
+          <p>The ones who know that true innovation happens at the edges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section truth-section">
+    <div class="container">
+      <h2 class="section-title">But here's the truth they won't tell you:</h2>
+      <p class="truth-statement">Marketing isn't about following formulas.</p>
+      <p class="truth-statement">It's about finding your true brew -</p>
+      <p class="truth-statement">That perfect blend of rebellion and results.</p>
+      <p class="truth-statement">Of passion and precision.</p>
+      <p class="truth-statement">Of punk rock spirit and profit.</p>
+    </div>
+  </section>
+  
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 class="stat-number">$50M+</h3>
+          <p class="stat-label">Revenue Managed</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="stat-number">15+</h3>
+          <p class="stat-label">Team Members Driving 8-Figure Growth</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="stat-number">47%</h3>
+          <p class="stat-label">Cut in Customer Acquisition Costs</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="stat-number">100+</h3>
+          <p class="stat-label">Marketing Rules Broken</p>
+        </div>
+      </div>
+      <p class="stats-tagline">Not by following the rules. By knowing which ones to break.</p>
+    </div>
+  </section>
+  
+  <section class="section paths-section">
+    <div class="container">
+      <h2 class="section-title">Two paths await:</h2>
+      
+      <div class="paths-grid">
+        <div class="path-card">
+          <div class="path-icon">🤘</div>
+          <h3 class="path-title">DIY REBELLION</h3>
+          <p>Download our systems. Break the rules your way.</p>
+          <p>Access proven frameworks that scaled companies from 7 to 8 figures.</p>
+          <p>No templates. No fluff. Just pure marketing ammunition.</p>
+          <a href="#contact" class="btn">Get Started</a>
+        </div>
+        
+        <div class="path-card">
+          <div class="path-icon">⚡</div>
+          <h3 class="path-title">DONE-FOR-YOU REVOLUTION</h3>
+          <p>Let us engineer your marketing rebellion.</p>
+          <p>We'll build you a custom system that crushes benchmarks and turns your vision into empire.</p>
+          <p class="warning">Fair warning: We don't sugarcoat. We don't do "comfortable." We build marketing machines that unleash empires.</p>
+          <a href="#contact" class="btn">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section cta-section">
+    <div class="container">
+      <h2 class="section-title">Ready to start your revolution?</h2>
+      <a href="#contact" class="btn btn-large">IGNITE YOUR REBELLION</a>
+    </div>
+  </section>
+  
+  <SongLyrics />
+</MainLayout>
+
+<style>
+  .section-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .section-subtitle {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    margin-bottom: 2rem;
+  }
+  
+  .manifesto-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+  }
+  
+  .remember-section {
+    background-color: var(--color-dark-gray);
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  .remember-grid {
+    display: grid;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .remember-item {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .remember-statement {
+    font-size: 1.75rem;
+    font-weight: 700;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+  
+  .rebellion-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .serve-statement {
+    font-size: 1.25rem;
+    margin: 3rem 0;
+    line-height: 1.6;
+  }
+  
+  .truth-section {
+    text-align: center;
+    background-color: var(--color-dark-gray);
+    padding: 6rem 0;
+  }
+  
+  .truth-statement {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-section {
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  .stats-grid {
+    display: grid;
+    gap: 3rem;
+    margin: 4rem 0;
+  }
+  
+  .stat-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--color-red);
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .stats-tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 2rem;
+  }
+  
+  .paths-section {
+    padding: 6rem 0;
+  }
+  
+  .paths-grid {
+    display: grid;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .path-card {
+    background-color: var(--color-dark-gray);
+    padding: 3rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .path-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .path-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-yellow);
+  }
+  
+  .warning {
+    font-style: italic;
+    margin: 1.5rem 0;
+    color: var(--color-red);
+  }
+  
+  .cta-section {
+    text-align: center;
+    background-color: var(--color-dark-gray);
+    padding: 6rem 0;
+  }
+  
+  .btn-large {
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
+    margin-top: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .remember-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .paths-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
